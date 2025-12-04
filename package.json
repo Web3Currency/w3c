@@ -2,11 +2,13 @@
   "name": "web3currency-",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Web3Currency.github.io/web3currency",
   "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start",
-  "lint": "next lint"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "next build && gh-pages -d out -t true"
   },
   "dependencies": {
     "framer-motion": "^12.23.25",
@@ -22,6 +24,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.0.6",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
