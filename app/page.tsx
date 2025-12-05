@@ -6,13 +6,14 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 // ← THIS BLOCK MUST BE HERE
+// Proper window.ethereum typing (no 'any' errors)
 declare global {
   interface Window {
     ethereum?: {
       isMetaMask?: boolean;
-      request?: (...args: any[]) => Promise<any>;
-      on?: (...args: any[]) => void;
-      removeListener?: (...args: any[]) => void;
+      request: (args: { method: string; params?: any[] }) => Promise<any>;
+      on?: (event: string, callback: (...args: any[]) => void) => void;
+      removeListener?: (event: string, callback: (...args: any[]) => void) => void;
     };
   }
 }
