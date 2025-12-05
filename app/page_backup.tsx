@@ -5,6 +5,19 @@ import { MessageCircle, ChevronDown, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
+// ← THIS BLOCK MUST BE HERE
+// Proper window.ethereum typing (no 'any' errors)
+declare global {
+  interface Window {
+    ethereum?: {
+      isMetaMask?: boolean;
+      request: (args: { method: string; params?: unknown[] }) => Promise<any>;
+      on?: (event: string, callback: (...args: unknown[]) => void) => void;
+      removeListener?: (event: string, callback: (...args: unknown[]) => void) => void;
+    };
+  }
+}
+
 export default function Home() {
   const dm = "https://wa.me/2347032754611";
   const community = "https://chat.whatsapp.com/EUEkJYcfSYB3aJuBSERi5N";
@@ -179,7 +192,7 @@ export default function Home() {
                     <br /><br />
                     At W3C, I personally oversee all trades, provide hands-on guidance, and create a supportive environment where members can learn and grow safely. My goal is to make crypto accessible, transparent, and trustworthy for everyone. Here, you can trade with confidence, access verified opportunities, and get real-time support whenever you need it.
                     <br /><br />
-                    Community Lead.
+                    Community Lead
                   </p>
                 </div>
               </div>
@@ -240,16 +253,17 @@ export default function Home() {
               r="6"
               fill="rgba(255,255,255,0.8)"
               filter="url(#glow)"
-              initial={{ offsetdistance: "0%", opacity: 0 }}
-              animate={{ offsetdistance: "100%", opacity: [0, 1, 1, 0] }}
+              initial={{ offsetDistance: "0%", opacity: 0 }}
+              animate={{ offsetDistance: "100%", opacity: [0, 1, 1, 0] }}
               transition={{
-                offsetdistance: { duration: 4, repeat: Infinity, ease: "linear" },
+                offsetDistance: { duration: 4, repeat: Infinity, ease: "linear" },
                 opacity: { duration: 4, repeat: Infinity, ease: "easeInOut" }
               }}
-              style={{ offsetPath: "path('M 0 900 Q 150 850 250 800 T 500 650 T 750 400 T 1000 100')" }}  
+              style={{ offsetPath: "path('M 0 900 Q 150 850 250 800 T 500 650 T 750 400 T 1000 100')" }}  // ← FIXED HERE (lowercase offsetPath)
             />
           </svg>
         </div>
+
         {/* HERO */}
         <section className="relative min-h-screen flex flex-col justify-center items-center px-5 text-center">
           <motion.div
@@ -665,7 +679,7 @@ export default function Home() {
           >
             FAQ
           </motion.h2>
-          {["What do I get as a member?", "Is it safe for beginners?", "How fast are payments?", "What if I make a mistake?", "Can I see real proof?"].map((q, i) => (
+          {["What do I get as a member?", "Is it safe for beginners?", "How fast are payments?", "Can I see real proof?"].map((q, i) => (
             <div key={i}>
               <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
@@ -679,8 +693,7 @@ export default function Home() {
                   {i === 0 && "Trusted Crypto and Web3 guidance, peer to peer trade and support, access to airdrops and opportunities, and a community with a voice."}
                   {i === 1 && "Yes! Every trade goes through admin only."}
                   {i === 2 && "Most trades complete under 10 minutes."}
-                  {i === 3 && "Just message me — I&apos;ll fix it instantly."}
-                  {i === 4 && "Yes! See live trades above."}
+                  {i === 3 && "Yes! See live trades above."}
                 </div>
               )}
             </div>
