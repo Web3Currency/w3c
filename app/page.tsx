@@ -5,6 +5,13 @@ import { MessageCircle, ChevronDown, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
+// ← ADD THIS BLOCK EXACTLY HERE
+declare global {
+  interface Window {
+    ethereum?: any;
+  }
+}
+
 export default function Home() {
   const dm = "https://wa.me/2347032754611";
   const community = "https://chat.whatsapp.com/EUEkJYcfSYB3aJuBSERi5N";
