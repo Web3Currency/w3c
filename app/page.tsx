@@ -240,10 +240,10 @@ export default function Home() {
               r="6"
               fill="rgba(255,255,255,0.8)"
               filter="url(#glow)"
-              initial={{ offsetdistance: "0%", opacity: 0 }}
-              animate={{ offsetdistance: "100%", opacity: [0, 1, 1, 0] }}
+              initial={{ offsetDistance: "0%", opacity: 0 }}
+animate={{ offsetDistance: "100%", opacity: [0, 1, 1, 0] }}
               transition={{
-                offsetdistance: { duration: 4, repeat: Infinity, ease: "linear" },
+                offsetDistance: { duration: 4, repeat: Infinity, ease: "linear" },
                 opacity: { duration: 4, repeat: Infinity, ease: "easeInOut" }
               }}
               style={{ offsetPath: "path('M 0 900 Q 150 850 250 800 T 500 650 T 750 400 T 1000 100')" }}  
