@@ -246,7 +246,7 @@ animate={{ offsetDistance: "100%", opacity: [0, 1, 1, 0] }}
                 offsetDistance: { duration: 4, repeat: Infinity, ease: "linear" },
                 opacity: { duration: 4, repeat: Infinity, ease: "easeInOut" }
               }}
-              style={{ offsetPath: "path('M 0 900 Q 150 850 250 800 T 500 650 T 750 400 T 1000 100')" }}  
+              style={{ offsetPath: "path(M 0 900 Q 150 850 250 800 T 500 650 T 750 400 T 1000 100)" }}  
             />
           </svg>
         </div>
@@ -364,7 +364,7 @@ animate={{ offsetDistance: "100%", opacity: [0, 1, 1, 0] }}
               <div className="absolute inset-0 bg-white/5 rounded-3xl blur-2xl" />
               <p className="relative text-xl md:text-2xl text-gray-300 leading-relaxed mb-6">
                 At Web3Currency, we believe crypto should be accessible to everyone, not just tech experts.
-                We're breaking down barriers by providing personalized education and creating a safe space where newcomers can learn, ask questions, and make their first trades with confidence.
+                We are breaking down barriers by providing personalized education and creating a safe space where newcomers can learn, ask questions, and make their first trades with confidence.
               </p>
               <p className="relative text-lg text-gray-400">
                 No scams. Just honest guidance from people who genuinely want to see you succeed.
