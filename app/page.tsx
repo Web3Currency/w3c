@@ -259,7 +259,7 @@ export default function Home() {
                 offsetDistance: { duration: 4, repeat: Infinity, ease: "linear" },
                 opacity: { duration: 4, repeat: Infinity, ease: "easeInOut" }
               }}
-              style={{ offsetpath: "path('M 0 900 Q 150 850 250 800 T 500 650 T 750 400 T 1000 100')" }}  // ← FIXED HERE (lowercase offsetpath)
+              style={{ offsetPath: "path('M 0 900 Q 150 850 250 800 T 500 650 T 750 400 T 1000 100')" }}  // ← FIXED HERE (lowercase offsetpath)
             />
           </svg>
         </div>
