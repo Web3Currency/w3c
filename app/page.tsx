@@ -173,9 +173,9 @@ export default function Home() {
                   priority
                 />
                 <div className="w-full">
-                  <h3 className="text-1xl font-bold mb-4">Hi, I&apos;m Jake</h3>
+                  <h3 className="text-1xl font-bold mb-4">Hi, I am Jake</h3>
                   <p className="text-gray-300 text-base leading-relaxed text-center">
-                    I&apos;m the lead of Web3Currency (W3C). I started this community because I noticed two major challenges in the crypto space: many people lose money to scams, and the complexity of crypto can be overwhelming for beginners.
+                    I am the lead of Web3Currency (W3C). I started this community because I noticed two major challenges in the crypto space: many people lose money to scams, and the complexity of crypto can be overwhelming for beginners.
                     <br /><br />
                     At W3C, I personally oversee all trades, provide hands-on guidance, and create a supportive environment where members can learn and grow safely. My goal is to make crypto accessible, transparent, and trustworthy for everyone. Here, you can trade with confidence, access verified opportunities, and get real-time support whenever you need it.
                     <br /><br />
