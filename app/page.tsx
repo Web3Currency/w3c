@@ -11,9 +11,9 @@ declare global {
   interface Window {
     ethereum?: {
       isMetaMask?: boolean;
-      request: (args: { method: string; params?: any[] }) => Promise<any>;
-      on?: (event: string, callback: (...args: any[]) => void) => void;
-      removeListener?: (event: string, callback: (...args: any[]) => void) => void;
+      request: (args: { method: string; params?: unknown[] }) => Promise<any>;
+      on?: (event: string, callback: (...args: unknown[]) => void) => void;
+      removeListener?: (event: string, callback: (...args: unknown[]) => void) => void;
     };
   }
 }
@@ -259,7 +259,7 @@ export default function Home() {
                 offsetDistance: { duration: 4, repeat: Infinity, ease: "linear" },
                 opacity: { duration: 4, repeat: Infinity, ease: "easeInOut" }
               }}
-              style={{ offsetPath: "path('M 0 900 Q 150 850 250 800 T 500 650 T 750 400 T 1000 100')" }}  // ← FIXED HERE (lowercase offsetpath)
+              style={{ offsetPath: "path('M 0 900 Q 150 850 250 800 T 500 650 T 750 400 T 1000 100')" }}  // ← FIXED HERE (lowercase offsetPath)
             />
           </svg>
         </div>
