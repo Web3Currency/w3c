@@ -2,13 +2,13 @@
   "name": "web3currency-",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Web3Currency.github.io/web3currency",
+  "homepage": "https://Web3Currency.github.io/w3c",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && gh-pages -d out -t true"
+    "deploy": "next build && gh-pages -d out -t"
   },
   "dependencies": {
     "framer-motion": "^12.23.25",
