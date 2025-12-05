@@ -5,10 +5,14 @@ import { MessageCircle, ChevronDown, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-// ← ADD THIS BLOCK EXACTLY HERE
+// ← ADD THIS ENTIRE BLOCK HERE
 declare global {
   interface Window {
-    ethereum?: any;
+    ethereum?: {
+      request: (args: { method: string }) => Promise<string[]>;
+      on?: (event: string, callback: (...args: any[]) => void) => void;
+      removeListener?: (event: string, callback: (...args: any[]) => void) => void;
+    };
   }
 }
 
