@@ -665,7 +665,7 @@ animate={{ offsetDistance: "100%", opacity: [0, 1, 1, 0] }}
           >
             FAQ
           </motion.h2>
-          {["What do I get as a member?", "Is it safe for beginners?", "How fast are payments?", "What if I make a mistake?", "Can I see real proof?"].map((q, i) => (
+          {["What do I get as a member?", "Is it safe for beginners?", "How fast are payments?", "Can I see real proof?"].map((q, i) => (
             <div key={i}>
               <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
@@ -679,8 +679,7 @@ animate={{ offsetDistance: "100%", opacity: [0, 1, 1, 0] }}
                   {i === 0 && "Trusted Crypto and Web3 guidance, peer to peer trade and support, access to airdrops and opportunities, and a community with a voice."}
                   {i === 1 && "Yes! Every trade goes through admin only."}
                   {i === 2 && "Most trades complete under 10 minutes."}
-                  {i === 3 && "Just message me — I&apos;ll fix it instantly."}
-                  {i === 4 && "Yes! See live trades above."}
+                  {i === 3 && "Yes! See live trades above."}
                 </div>
               )}
             </div>
