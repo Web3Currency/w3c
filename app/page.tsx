@@ -7,6 +7,7 @@ import Image from "next/image";
 
 export default function Home() {
   const dm = "https://wa.me/2347032754611";
+  const enquiry = "https://wa.me/message/BTP2XGXIXBEUC1";
   const community = "https://chat.whatsapp.com/EUEkJYcfSYB3aJuBSERi5N";
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [current, setCurrent] = useState(0);
@@ -699,7 +700,7 @@ animate={{ offsetDistance: "100%", opacity: [0, 1, 1, 0] }}
             Your Web3 Journey?
           </motion.h2>
           <a
-            href={dm}
+            href={enquiry}
             target="_blank"
             className="inline-block px-16 py-6 bg-white/10 backdrop-blur-xl rounded-2xl font-black text-2xl md:text-3xl border-4 border-white/30 shadow-2xl hover:bg-white/20 transition"
           >
