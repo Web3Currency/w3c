@@ -22,6 +22,10 @@ export const metadata: Metadata = {
     "Web3 community",
     "crypto education",
     "learn cryptocurrency",
+    "Pi Network Nigeria",
+    "Nigeria crypto community",
+    "Nigeria web3 community",
+    "Crypto whatsapp group",
     "Bitcoin trading Nigeria",
     "USDT P2P",
     "crypto airdrops",
@@ -38,8 +42,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "https://i.imgur.com/VLGoZkk.png",
-    apple: "https://i.imgur.com/VLGoZkk.png",
+    icon: "/icon.png",
+    apple: "/icon.png",
+    shortcut: "/favicon.ico",
   },
   openGraph: {
     title: "Web3Currency - Learn, Trade & Earn in Crypto",
@@ -77,8 +82,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <head>
-        <link rel="icon" href="https://i.imgur.com/VLGoZkk.png" />
-        <link rel="apple-touch-icon" href="https://i.imgur.com/VLGoZkk.png" />
         {/* Google Material Icons — for FAST, FAIR RATE, VERIFIED badges */}
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
       </head>
