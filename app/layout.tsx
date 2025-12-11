@@ -31,15 +31,15 @@ export const metadata: Metadata = {
     "Web3Currency",
   ],
   authors: [{ name: "Web3Currency" }],
-  creator: "Web3Currency",
+  creator: "JAKE",
   publisher: "Web3Currency",
   robots: {
     index: true,
     follow: true,
   },
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: "/https://i.imgur.com/VLGoZkk.png",
+    apple: "/https://i.imgur.com/VLGoZkk.png",
   },
   openGraph: {
     title: "WEB3CURRENCY - Learn Crypto, Trade P2P & Access Web3 Opportunities",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "WEB3CURRENCY",
     images: [
       {
-        url: "https://i.imgur.com/p7Xzel4.jpeg",
+        url: "https://i.imgur.com/p7XzeI4.jpeg",
         width: 1200,
         height: 630,
         alt: "WEB3CURRENCY - Crypto Trading & Web3 Community",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     title: "WEB3CURRENCY - Learn Crypto, Trade P2P & Access Web3 Opportunities",
     description:
       "Learn, Trade, and Grow with W3C - Your trusted community for crypto and Web3 education, safe P2P trading, and real guidance. Join our supportive environment to master crypto basics, gain practical trading experience, and discover verified airdrops and early opportunities.",
-    images: ["https://i.imgur.com/p7Xzel4.jpeg"],
+    images: ["https://i.imgur.com/p7XzeI4.jpeg"],
     creator: "@Web3CurrencyNG",
   },
   metadataBase: new URL("https://w3c.vercel.app"),
@@ -77,7 +77,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <head>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/https://i.imgur.com/VLGoZkk.png" />
         <link rel="apple-touch-icon" href="/logo.png" />
         {/* Google Material Icons — for FAST, FAIR RATE, VERIFIED badges */}
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
