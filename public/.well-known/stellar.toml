@@ -1,0 +1,21 @@
+NETWORK_PASSPHRASE="Pi Testnet"
+
+cat > public/.well-known/stellar.toml << 'EOF'
+NETWORK_PASSPHRASE="Pi Testnet"
+
+
+[[CURRENCIES]]
+code="W3C"
+issuer="GCIPTMBGZ2IXATBZPZTLQYT7OLUC7IJTDBKTFIUAFM4A35R6UU5BLN3W"
+display_decimals=7
+name="Web3Currency"
+desc="Web3Currency (W3C) is a community token on Pi Network Testnet"
+conditions="This token is for testing purposes on Pi Testnet"
+image="https://i.imgur.com/VLGoZkk.png"
+is_asset_anchored=false
+
+[[DOCUMENTATION]]
+ORG_NAME="Web3Currency"
+ORG_URL="https://w3c.vercel.app"
+ORG_DESCRIPTION="Web3Currency - A community token on Pi Network"
+ORG_SUPPORT_EMAIL="web3currency.info@gmail.com"
