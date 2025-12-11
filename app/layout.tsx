@@ -13,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "WEB3CURRENCY - Learn Crypto, Trade P2P & Access Web3 Opportunities",
+  title: "WEB3CURRENCY - Learn, Trade and Access Web3 Opportunities",
   description:
     "Learn, Trade, and Grow with W3C - Your trusted community for crypto and Web3 education, safe P2P trading, and real guidance. Join our supportive environment to master crypto basics, gain practical trading experience, and discover verified airdrops and early opportunities.",
   keywords: [
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     apple: "/https://i.imgur.com/VLGoZkk.png",
   },
   openGraph: {
-    title: "WEB3CURRENCY - Learn Crypto, Trade P2P & Access Web3 Opportunities",
+    title: "WEB3CURRENCY - Learn, Trade and Access Web3 Opportunities",
     description:
       "Learn, Trade, and Grow with W3C - Your trusted community for crypto and Web3 education, safe P2P trading, and real guidance. Join our supportive environment to master crypto basics, gain practical trading experience, and discover verified airdrops and early opportunities.",
     url: "https://w3c.vercel.app",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "WEB3CURRENCY - Learn Crypto, Trade P2P & Access Web3 Opportunities",
+    title: "WEB3CURRENCY - Learn, Trade and Access Web3 Opportunities",
     description:
       "Learn, Trade, and Grow with W3C - Your trusted community for crypto and Web3 education, safe P2P trading, and real guidance. Join our supportive environment to master crypto basics, gain practical trading experience, and discover verified airdrops and early opportunities.",
     images: ["https://i.imgur.com/p7XzeI4.jpeg"],
