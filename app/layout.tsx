@@ -13,9 +13,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "WEB3CURRENCY - Learn, Trade and Access Web3 Opportunities",
+  title: "Web3Currency - Learn, Trade & Earn in Crypto",
   description:
-    "Learn, Trade, and Grow with W3C - Your trusted community for crypto and Web3 education, safe P2P trading, and real guidance. Join our supportive environment to master crypto basics, gain practical trading experience, and discover verified airdrops and early opportunities.",
+    "Join W3C community to master crypto, make P2P trades, and discover Web3 opportunities. Beginner-friendly guidance, trusted support, and verified airdrops.",
   keywords: [
     "crypto trading",
     "P2P crypto exchange",
@@ -38,21 +38,21 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/https://i.imgur.com/VLGoZkk.png",
-    apple: "/https://i.imgur.com/VLGoZkk.png",
+    icon: "https://i.imgur.com/VLGoZkk.png",
+    apple: "https://i.imgur.com/VLGoZkk.png",
   },
   openGraph: {
-    title: "WEB3CURRENCY - Learn, Trade and Access Web3 Opportunities",
+    title: "Web3Currency - Learn, Trade & Earn in Crypto",
     description:
-      "Learn, Trade, and Grow with W3C - Your trusted community for crypto and Web3 education, safe P2P trading, and real guidance. Join our supportive environment to master crypto basics, gain practical trading experience, and discover verified airdrops and early opportunities.",
+      "Master crypto & Web3 with trusted community support. Safe P2P trading, beginner-friendly education, and verified opportunities.",
     url: "https://w3c.vercel.app",
-    siteName: "WEB3CURRENCY",
+    siteName: "Web3Currency",
     images: [
       {
         url: "https://i.imgur.com/p7XzeI4.jpeg",
         width: 1200,
         height: 630,
-        alt: "WEB3CURRENCY - Crypto Trading & Web3 Community",
+        alt: "Web3Currency - Crypto Trading & Web3 Community",
       },
     ],
     locale: "en_US",
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "WEB3CURRENCY - Learn, Trade and Access Web3 Opportunities",
+    title: "Web3Currency - Learn, Trade & Earn in Crypto",
     description:
-      "Learn, Trade, and Grow with W3C - Your trusted community for crypto and Web3 education, safe P2P trading, and real guidance. Join our supportive environment to master crypto basics, gain practical trading experience, and discover verified airdrops and early opportunities.",
+      "Master crypto & Web3 with trusted community support. Safe P2P trading and beginner-friendly guidance.",
     images: ["https://i.imgur.com/p7XzeI4.jpeg"],
     creator: "@Web3CurrencyNG",
   },
@@ -77,8 +77,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <head>
-        <link rel="icon" href="/https://i.imgur.com/VLGoZkk.png" />
-        <link rel="apple-touch-icon" href="/logo.png" />
+        <link rel="icon" href="https://i.imgur.com/VLGoZkk.png" />
+        <link rel="apple-touch-icon" href="https://i.imgur.com/VLGoZkk.png" />
         {/* Google Material Icons — for FAST, FAIR RATE, VERIFIED badges */}
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
       </head>
