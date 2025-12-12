@@ -55,7 +55,7 @@ export default function Home() {
             className="drop-shadow-md"
             priority
           />
-          <span className="text-xl md:text-2xl font-black tracking-tight">
+          <span className="text-xl md:text-1xl font-black tracking-tight">
             WEB3CURRENCY
           </span>
         </motion.div>

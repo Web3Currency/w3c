@@ -1,17 +1,3 @@
-import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   title: "Web3Currency - Learn, Trade & Earn in Crypto",
   description:
@@ -42,9 +28,14 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/icon.png",
-    apple: "/icon.png",
-    shortcut: "/favicon.ico",
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
   },
   openGraph: {
     title: "Web3Currency - Learn, Trade & Earn in Crypto",
@@ -72,22 +63,5 @@ export const metadata: Metadata = {
     creator: "@Web3CurrencyNG",
   },
   metadataBase: new URL("https://w3c.vercel.app"),
+  manifest: "/site.webmanifest",
 };
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
-      <head>
-        {/* Google Material Icons — for FAST, FAIR RATE, VERIFIED badges */}
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-      </head>
-      <body className={inter.className}>
-        {children}
-      </body>
-    </html>
-  );
-}
