@@ -7,7 +7,7 @@ display_decimals=7
 name="Web3Currency"
 desc="Web3Currency (W3C) is a community token on Pi Network Testnet"
 conditions="This token is for testing purposes on Pi Testnet"
-image="https://i.imgur.com/VLGoZkk.png"
+image="https://i.imgur.com/pTdMxdp.png"
 is_asset_anchored=false
 
 [[DOCUMENTATION]]
